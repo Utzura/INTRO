@@ -9,36 +9,55 @@ st.set_page_config(
 
 st.markdown("""
     <style>
-    body {
-        background: linear-gradient(135deg, #E3F2FD, #E1BEE7);
+    /* Fondo general */
+    .stApp {
+        background-color: #fafafa;
+        color: #222;
+        font-family: "Segoe UI", Roboto, sans-serif;
+    }
+
+    /* Sidebar */
+    section[data-testid="stSidebar"] {
+        background-color: #f0f0f5 !important;
         color: #222;
     }
-    .stApp {
-        background: linear-gradient(135deg, #EDE7F6 0%, #E1F5FE 100%);
+
+    /* Títulos */
+    h1, h2, h3, h4, h5, h6 {
+        color: #3f3d56;
+        font-weight: 700;
     }
+
+    /* Botones */
     .stButton>button {
-        background-color: #7E57C2;
+        background-color: #6c63ff;
         color: white;
-        border-radius: 10px;
+        border-radius: 8px;
         border: none;
         height: 45px;
         width: 100%;
         font-size: 16px;
-        transition: all 0.3s ease;
+        font-weight: 600;
+        transition: all 0.25s ease-in-out;
     }
     .stButton>button:hover {
-        background-color: #5E35B1;
-        transform: scale(1.05);
+        background-color: #5a52e0;
+        transform: scale(1.03);
     }
-    .stSelectbox, .stTextInput, .stRadio, .stCheckbox {
-        font-weight: 500;
+
+    /* Inputs */
+    .stTextInput>div>div>input, .stSelectbox>div>div>select {
+        background-color: #fff;
+        color: #222;
     }
-    .stSidebar {
-        background-color: #F3E5F5;
+
+    /* Tarjetas visuales */
+    .stInfo, .stSuccess {
+        background-color: #f8f8ff !important;
+        color: #333 !important;
+        border-left: 5px solid #6c63ff !important;
     }
-    h1, h2, h3, h4, h5, h6 {
-        color: #4A148C;
-    }
+
     </style>
 """, unsafe_allow_html=True)
 
