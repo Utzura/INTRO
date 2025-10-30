@@ -1,54 +1,67 @@
 import streamlit as st
 from PIL import Image
 
-# Configuración base
 st.set_page_config(page_title="Mi Primera App", page_icon="🎨")
 
-# 🌈 Estilo sutil
+# 🎨 Estilo con texto blanco y colores suaves
 st.markdown("""
 <style>
-/* Tipografía moderna y limpia */
+/* Tipografía moderna */
 html, body, [class*="st-"] {
     font-family: "Poppins", "Segoe UI", sans-serif;
-    color: #202020;
+    color: #ffffff; /* texto blanco */
+    background-color: #101018; /* fondo gris oscuro azulado */
 }
 
-/* Colores sutilmente más oscuros */
+/* Títulos vino oscuro */
 h1, h2, h3, h4, h5, h6 {
-    color: #aa1e1e; /* rojo oscuro elegante */
+    color: #b52b3a;
 }
 
 /* Botones */
 .stButton>button {
-    background-color: #d62828; /* rojo original */
+    background-color: #b52b3a;
     color: white;
     border: none;
     border-radius: 6px;
     transition: 0.2s ease-in-out;
 }
 .stButton>button:hover {
-    background-color: #9b1c1c; /* rojo oscuro al pasar el mouse */
+    background-color: #8c1f2c;
 }
 
 /* Checkboxes y radios */
 .stCheckbox>div, .stRadio>div {
-    accent-color: #b71d1d !important;
+    accent-color: #b52b3a !important;
+    color: white !important;
 }
 
 /* Selectbox */
 div[data-baseweb="select"] > div {
-    border-color: #b71d1d !important;
+    border-color: #b52b3a !important;
+    color: white !important;
+}
+div[data-baseweb="select"] span {
+    color: white !important;
 }
 
 /* Sidebar */
 section[data-testid="stSidebar"] {
-    background-color: #f8f8f8 !important;
+    background-color: #181820 !important;
+    color: white !important;
 }
 
 /* Inputs */
 input, textarea {
     border-radius: 6px !important;
-    border-color: #ccc !important;
+    border-color: #b52b3a !important;
+    color: white !important;
+    background-color: #2a2a38 !important;
+}
+
+/* Texto general */
+p, label, span, div {
+    color: white !important;
 }
 </style>
 """, unsafe_allow_html=True)
