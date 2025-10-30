@@ -1,7 +1,7 @@
 import streamlit as st
 from PIL import Image
 
-st.set_page_config(page_title="Mi Primera App", page_icon="🎨")
+st.set_page_config(page_title="Mi Primera ejercicio", page_icon="🎨")
 
 # 🎨 Estilo con texto blanco y colores suaves
 st.markdown("""
@@ -68,9 +68,9 @@ p, label, span, div {
 
 # ------------------- APP -------------------
 
-st.title("🎨 Mi Primera App!!")
-st.header("En este espacio comienzo a desarrollar mis aplicaciones para interfaces multimodales.")
-st.write("Fácilmente puedo realizar backend y frontend.")
+st.title("🎨 Hola Teacher, espero que este teniendo un buen día")
+st.header("Desarrollo de apps multimodales.")
+st.write("Fácilmente puedo realizar backend y frontend (mentira, me falta experiencia :( ).")
 
 image = Image.open('Interfaces Mult2.png')
 st.image(image, caption='Interfaces multimodales')
